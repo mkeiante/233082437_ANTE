@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <?php
+        echo "1 to 100 with Fizz, Buzz, and FizzBuzz\n";
+            for ($i = 1; $i <= 100; $i++) {
+                if ($i % 3 == 0 && $i % 5 == 0) {
+                 echo "FizzBuzz\n";
+                } elseif ($i % 3 == 0) {
+                    echo "Fizz\n";
+                } elseif ($i % 5 == 0) {
+                    echo "Buzz\n";
+             } else {
+                    echo $i . "\n";
+            }
+        }
+
+        echo "\n";
+    ?>
+
+    <?php
+
+        echo "First 10 Fibonacci numbers (even ones only):\n";
+            $fibonacci = [0, 1]; // Starting two numbers of Fibonacci sequence
+            $evenFibonacci = []; // To store even Fibonacci numbers
+
+        for ($i = 2; $i < 10; $i++) {
+            $fibonacci[] = $fibonacci[$i - 1] + $fibonacci[$i - 2];
+        }
+
+        foreach ($fibonacci as $num) {
+            if ($num % 2 == 0) {
+                $evenFibonacci[] = $num;
+            }
+        }
+
+        echo implode(", ", $evenFibonacci) . "\n";
+    ?>
+
+</body>
+</html>

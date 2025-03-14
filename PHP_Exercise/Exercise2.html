@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <?php
+        echo "Check if the number is an even number or an odd number.\n";
+        $num = readline("Input a number: ");
+            if ($num % 2 == 0) {
+                echo "$num is an Even number.";
+            } else {
+                echo "$num is an Odd number.";
+            }
+        ?>
+
+    <?php
+        echo "Check if the number is postive, negative, or zero.\n";
+        $num = readline("Input a number: ");
+            if ($num > 0) {
+                echo "$num is a Positive number.";
+            } elseif ($num < 0) {
+                echo "$num is a Negative number.";
+            } else {
+                echo "$num is zero.";
+            }
+        ?>  
+
+</body>
+</html>

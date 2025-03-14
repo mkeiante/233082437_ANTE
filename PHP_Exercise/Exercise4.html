@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <?php
+        function greeting($name) {
+            return "Hello, " . $name . "!";
+        }
+    
+        $name = readline("Enter your name: ");
+    
+         echo greeting($name) ;
+    ?>
+
+    <?php
+
+        function square($number) {
+            return $number * $number;
+        }
+
+        $num = readline("Enter a number: ");
+
+        if (is_numeric($num)) {
+            echo "The square of $num is " . square($num) . ".";
+        } else {
+            echo "Please enter a valid number.";
+        }
+    ?>
+
+</body>
+</html>
